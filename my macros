@@ -1,0 +1,55 @@
+#include <bits/stdc++.h>
+#include <iostream>
+#include <algorithm>
+#include <string>
+#include <vector>
+#include <queue>
+#include <stack>
+#include <math.h>
+#define endl '\n'
+#define int long long
+#define ff first
+#define ss second
+#define pb push_back
+#define all(x) x.begin(),x.end()
+#define fastio ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
+#define max3(a,b,c) max(max(a,b),c);
+#define min3(a,b,c) min(min(a,b),c);
+#define ssum(x) x*(x+1)/2
+#define MODD 1000000007
+#define MODDD 998244353
+#define INTM INT32_MAX
+#define cno cout<<"NO"<<endl;
+#define cyes cout<<"YES"<<endl;
+#define cendl cout<<endl;
+#define yedi(x) while(x--) { cout<<"yedi"; }
+#define zort sort
+using namespace std;
+typedef pair<int,int> pii;
+typedef pair<pii,int> ppiii;
+typedef pair<pii,pii> ppp;
+typedef vector<int> vi;
+typedef vector<vi> vvi;
+typedef vector<char> vc;
+typedef tuple<int,int,int> tiii;
+typedef vector<tiii> vtiii;
+typedef vector<pii> vpii;
+typedef map<int,int> mii;
+typedef map<char,int> mci;
+/* makapakafunclub ofc 
+ * x e y + z =ilk rakam x sonra e harfi sonra 10un kacinci kuvveti arti z
+ codeforces.com/ 
+  */
+  int n,cnt=0;
+char renk[105][105];
+bool visited[105][105];
+int isprime(int x)
+{
+	if(x==2) return 1;
+	for(int i=2;i<=sqrt(x);i++)
+	{
+		if(x%i==0)
+		return 0;
+	}
+	return 1;
+}
